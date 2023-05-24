@@ -44,25 +44,41 @@ namespace ConsoleApp1
             //}
 
 
-            //Задача 17
+            //Задача 18
+            //Random rnd = new Random();
+            //    int elem = rnd.Next(-30,30);
+            //    if (elem > 0)
+            //    {
+            //        Console.WriteLine($"{elem} - положительный");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine($"{elem} - отрицательный");
+
+            //    }
 
 
-            Random rnd = new Random();
-            for (int z = 1; z <= 0; z++)
+            //Задача 19
+
+
+
+
+            //Задача 20
+
+            Console.Write("Введите день недели: ");
+            byte day = byte.Parse(Console.ReadLine());
+            switch (day)
             {
-                int elem = rnd.Next(-30,30);
-                if (elem > 0)
-                {
-                    Console.WriteLine($"{elem} - положительный");
-                }
-                else
-                {
-                    Console.WriteLine($"{elem} - отрицательный");
+                case 1: Console.WriteLine("Понедельник"); break;
+                case 2: Console.WriteLine("Вторник"); break;
+                case 3: Console.WriteLine("Среда"); break;
+                case 4: Console.WriteLine("Четверг"); break;
+                case 5: Console.WriteLine("Пятница"); break;
+                case 6: Console.WriteLine("Суббота"); break;
+                case 7: Console.WriteLine("Воскресенье"); break;
 
-                }
+                default: Console.WriteLine("Errorchik");break;
             }
-            
-
             Console.ReadKey();
 
         }
